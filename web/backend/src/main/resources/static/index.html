@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Arabic Text Summarization</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1 lang="ar" dir="rtl">
+                تلخيص النصوص العربية
+            </h1>
+
+            <h2>Arabic Text Summarization</h2>
+
+            <p>Résumé automatique de textes arabes</p>
+
+            <span class="demo">
+                Mode démonstration — Mock API
+            </span>
+        </header>
+
+        <section class="panel">
+
+            <form id="summaryForm">
+
+                <label for="sourceText">
+                    Texte original
+                </label>
+
+                <textarea
+                    id="sourceText"
+                    lang="ar"
+                    dir="rtl"
+                    placeholder="أدخل النص العربي هنا..."
+                    rows="10"
+                    required
+                ></textarea>
+
+                <p id="counter">0 mots · 0 caractères</p>
+
+                <div class="actions">
+
+                    <button id="clearBtn"
+                            type="button"
+                            class="secondary">
+                        Effacer
+                    </button>
+
+                    <button id="summarizeBtn"
+                            type="submit">
+                        Générer le résumé
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div id="loader" role="status" hidden>
+                <span class="spinner"></span>
+                Génération du résumé en cours...
+            </div>
+
+            <p id="error" role="alert" hidden></p>
+
+        </section>
+
+        <section id="result" class="panel" hidden>
+
+            <div class="result-header">
+
+                <h2>Résumé généré</h2>
+
+                <button id="copyBtn"
+                        type="button"
+                        class="secondary">
+                    Copier
+                </button>
+
+            </div>
+
+            <p id="summary" lang="ar" dir="rtl"></p>
+
+            <div class="statistics">
+
+                <div class="stat">
+                    <span>Temps de traitement</span>
+                    <strong id="processingTime">-</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Tokens générés</span>
+                    <strong id="tokenCount">-</strong>
+                </div>
+
+            </div>
+
+            <h3>Tokens générés par le modèle</h3>
+
+            <div id="tokens"></div>
+
+        </section>
+
+        <footer>
+            Projet NLP — Arabic Abstractive Text Summarization
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,4 +1,27 @@
 # Python
 .venv/
+venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+
+# Java et Maven
+target/
+*.class
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Configuration locale et secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
