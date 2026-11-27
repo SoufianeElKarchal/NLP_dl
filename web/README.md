@@ -1,4 +1,4 @@
-
+<!-- markdownlint-disable MD060 -->
 # Web Application — Arabic Text Summarization
 
 ## 1. Présentation
@@ -221,10 +221,10 @@ model.api.url=http://127.0.0.1:8000
 model.api.read-timeout-ms=60000
 ```
 
-| Propriété               | Description                                  |
+| Propriété | Description |
 | ------------------------- | -------------------------------------------- |
-| server.port               | Port du backend Java                         |
-| model.api.url             | Adresse du service NLP                       |
+| server.port | Port du backend Java |
+| model.api.url | Adresse du service NLP |
 | model.api.read-timeout-ms | Délai d'attente de lecture en millisecondes |
 
 ## 10. Démarrage de l'application
@@ -251,11 +251,11 @@ Adapter cette commande au point d'entrée réel du service NLP indiqué dans la 
 
 Adresse du service :
 
-http://127.0.0.1:8000
+<http://127.0.0.1:8000>
 
 Documentation Swagger :
 
-http://127.0.0.1:8000/docs
+<http://127.0.0.1:8000/docs>
 
 ### Terminal 2 — Backend Spring Boot
 
@@ -279,7 +279,7 @@ cd web/backend
 
 Ouvrir dans le navigateur :
 
-http://localhost:8080/
+<http://localhost:8080/>
 
 Saisir un texte arabe puis cliquer sur « Générer le résumé ».
 
@@ -291,18 +291,18 @@ Le frontend est directement servi par Spring Boot. Il ne nécessite pas de serve
 
 Adresse de base : `http://localhost:8080`
 
-| Méthode | Endpoint           | Description                            |
+| Méthode | Endpoint | Description |
 | -------- | ------------------ | -------------------------------------- |
-| GET      | `/api/health`    | Vérifier la disponibilité du backend |
-| POST     | `/api/summarize` | Générer un résumé                  |
+| GET | `/api/health` | Vérifier la disponibilité du backend |
+| POST | `/api/summarize` | Générer un résumé |
 
 ### API du service NLP
 
 Adresse de base : `http://127.0.0.1:8000`
 
-| Méthode | Endpoint              | Description                     |
+| Méthode | Endpoint | Description |
 | -------- | --------------------- | ------------------------------- |
-| POST     | `/api/v1/summarize` | Demander un résumé au modèle |
+| POST | `/api/v1/summarize` | Demander un résumé au modèle |
 
 ### Structure de la requête
 
@@ -485,4 +485,11 @@ chcp 65001
 
 ## 18. Documentation générale
 
-Pour plus d'informations concernant les données, le prétraitement, l'architecture du modèle Deep Learning et son entraînement, consulter le [README principal du projet](../README.md).
+Pour plus d'informations concernant les données, le prétraitement, l'architecture du modèle Deep Learning et son entraînement, con
+
+| col1 | col2 | col3 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+
+sulter le [README principal du projet](../README.md).
